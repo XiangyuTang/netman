@@ -1,4 +1,5 @@
 #!/bin/bash
+basepath=$(cd `dirname $0`; pwd)
 is_bmon_installed=($(dpkg -s bmon|grep Status))
 if [ ${is_bmon_installed[2]} == "ok" ]
 then

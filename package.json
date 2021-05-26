@@ -1,10 +1,11 @@
 {
   "name": "cli_demo_txy",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "test demo by txy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"hello world!\""
+    "test": "echo \"hello world!\"",
+    "manage_cost": "bash manage_cost.sh"
   },
   "keywords": [
     "emm"
