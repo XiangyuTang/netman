@@ -1,7 +1,7 @@
 {
-  "name": "cli_demo_txy",
-  "version": "1.0.17",
-  "description": "test demo by txy",
+  "name": "netman",
+  "version": "1.0.1",
+  "description": "NetWork Manager on Linux",
   "main": "index.js",
   "scripts": {
     "test": "echo \"hello world!\"",
