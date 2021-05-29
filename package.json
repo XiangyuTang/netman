@@ -1,11 +1,12 @@
 {
   "name": "netman",
-  "version": "1.0.22",
-  "description": "NetWork Manager on Linux",
+  "version": "1.0.23",
+  "description": "NetWork Manager on Linux Ubuntu",
   "main": "index.js",
   "scripts": {
     "test": "echo \"hello world!\"",
-    "cost": "bash manage_cost.sh"
+    "monitor": "bash bmon.sh",
+    "stat": "bash vnstat.sh"
   },
   "keywords": [
     "netman",

@@ -18,9 +18,13 @@ npm i -g netman
 > Usage: netman [options]
 > 
 > Options:
+>
 >   -V, --version              output the version number
+>
 >   -n, --yourname [yourname]  Your name
+>
 >   -g, --glad                 Tell us you are happy
+>
 >   -c, --cost [eth_name]      Monitor the network card [eth_name] traffic
 >                              consumption
 >   -h, --help                 display help for command
