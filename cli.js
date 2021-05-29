@@ -30,11 +30,9 @@ if (options.yourname) {
 //console.log(options.yourname);
 //console.log(options.cost);
 if (options.cost){
-	var path = `find . -name manage_cost.sh`;
-	console.log(path);
 	//var cmd = `gnome-terminal -t "Manage_Cost_Terminal" -e 'bash -c "bash manage_cost.sh ${options.cost};exec bash"'`;//打开另一个终端执行脚本
 	//var cmd1 = `bash manage_cost.sh ${options.cost}`;
-	var cmd = `gnome-terminal -t "Manage_Cost_Terminal" -e 'bash -c "npm run manage_cost ${options.cost};exec bash"'`;
+	var cmd = `gnome-terminal -t "Manage_Cost_Terminal" -e 'bash -c "npm run cost ${options.cost};exec bash"'`;
 	exec(cmd ,function(err,stdout,stderr){
 	    if(err) {
     		console.log('error:'+stderr);

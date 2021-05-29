@@ -1,14 +1,17 @@
 {
   "name": "netman",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "NetWork Manager on Linux",
   "main": "index.js",
   "scripts": {
     "test": "echo \"hello world!\"",
-    "manage_cost": "bash manage_cost.sh"
+    "cost": "bash manage_cost.sh"
   },
   "keywords": [
-    "emm"
+    "netman",
+    "network manager",
+    "network manage",
+    "network"
   ],
   "author": "txyyy",
   "license": "MIT",
