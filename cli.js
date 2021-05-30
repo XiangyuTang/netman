@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-console.log('Welcome to the NetworkManager demo!');
 var program = require('commander');
 var exec = require('child_process').exec; 
 /*
@@ -34,15 +33,28 @@ if (options.monitor){
 	    }
 	});
 }
-if (options.NI_stat){
+else if (options.NI_stat){
         var cmd = `npm run stat ${options.NI_stat}`;
         exec(cmd ,function(err,stdout,stderr){
             if(err) {
                 console.log('error:'+stderr);
             }
-            else{
+	    else{
                 console.log(stdout);
             }
         });
+}
+else{
+	//display welcome page
+	var cmd = `npm run index`;
+        exec(cmd ,function(err,stdout,stderr){
+            if(err) {
+                console.log('error:'+stderr);
+            }
+	    else{
+                console.log(stdout);
+            }
+        });
+
 }
 

@@ -15,17 +15,13 @@ npm i -g netman
 
 # Usage
 
-> Usage: netman [options]
-> 
-> Options:
->
->   -V, --version              output the version number
->
->   -n, --yourname [yourname]  Your name
->
->   -g, --glad                 Tell us you are happy
->
->   -c, --cost [eth_name]      Monitor the network card [eth_name] traffic
->                              consumption
->   -h, --help                 display help for command
-
+```
+Usage: netman [options]
+ 
+Options:
+  -V, --version            output the version number
+  -s, --NI_stat [NI_name]  Log network traffic for the specified interface
+  -m, --monitor [NI_name]  Real-time Monitoring of network interface(NI)
+                           bandwidth.
+  -h, --help               display help for command
+```
