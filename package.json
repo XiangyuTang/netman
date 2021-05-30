@@ -1,6 +1,6 @@
 {
   "name": "netman",
-  "version": "1.0.38",
+  "version": "1.0.39",
   "description": "NetWork Manager on Linux Ubuntu",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/XiangyuTang/cli_demo.git"
+    "url": "https://github.com/XiangyuTang/netman.git"
   }
 }

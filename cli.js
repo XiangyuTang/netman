@@ -2,17 +2,6 @@
 
 var program = require('commander');
 var exec = require('child_process').exec; 
-/*
-	var cmdStr ='ifconfig';
-	exec(cmdStr ,function(err,stdout,stderr){
-	if(err) {
-   		console.log('error:'+stderr);
-	} 
-	else{
-		console.log(stdout);
-	}
-	});
-*/
 
 program
   .version('0.1.0')
@@ -23,7 +12,8 @@ program
 const options = program.opts();
 
 if (options.monitor){
-	var cmd = `gnome-terminal -t "Bmon_Terminal" -e 'bash -c "npm run monitor ${options.monitor};exec bash"'`;
+	console.log("launching Bmon terminal.");
+	var cmd = `gnome-terminal -t "Bmon_Terminal" -e 'bash -c "npm run -s monitor ${options.monitor};exec bash"'`;
 	exec(cmd ,function(err,stdout,stderr){
 	    if(err) {
     		console.log('error:'+stderr);
@@ -34,7 +24,7 @@ if (options.monitor){
 	});
 }
 else if (options.NI_stat){
-        var cmd = `npm run stat ${options.NI_stat}`;
+        var cmd = `npm run -s stat ${options.NI_stat}`;
         exec(cmd ,function(err,stdout,stderr){
             if(err) {
                 console.log('error:'+stderr);
@@ -46,7 +36,7 @@ else if (options.NI_stat){
 }
 else{
 	//display welcome page
-	var cmd = `npm run index`;
+	var cmd = `npm run -s index`;
         exec(cmd ,function(err,stdout,stderr){
             if(err) {
                 console.log('error:'+stderr);
