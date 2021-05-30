@@ -12,7 +12,7 @@ program
 const options = program.opts();
 
 if (options.monitor){
-	console.log("launching Bmon terminal.");
+	console.log("Launching Bmon terminal...");
 	var cmd = `gnome-terminal -t "Bmon_Terminal" -e 'bash -c "npm run -s monitor ${options.monitor};exec bash"'`;
 	exec(cmd ,function(err,stdout,stderr){
 	    if(err) {
