@@ -9,4 +9,4 @@ then
 fi
 echo "Welcome to the Network Manager!"
 figlet Netman
-echo "©2021 Tsinghua University"
+echo "Copyright © 2021 THU. All rights reserved."
