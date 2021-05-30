@@ -1,6 +1,6 @@
 {
   "name": "netman",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "NetWork Manager on Linux Ubuntu",
   "main": "index.js",
   "scripts": {
