@@ -6,7 +6,8 @@
   "scripts": {
     "index": "bash ./scripts/welcome.sh",
     "monitor": "bash ./scripts/bmon.sh",
-    "stat": "bash ./scripts/vnstat.sh"
+    "stat": "bash ./scripts/vnstat.sh",
+    "management": "bash ./scripts/nmtui.sh"
   },
   "keywords": [
     "netman",
