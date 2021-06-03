@@ -57,7 +57,9 @@
     "monitor": "bash ./scripts/bmon.sh",
     "stat": "bash ./scripts/vnstat.sh",
     "firewall":"bash ./scripts/firewall.sh",
-    "security_check":"bash ./scripts/security_check.sh"
+    "security_check":"bash ./scripts/security_check.sh",
+    "mytraceroute":"bash ./scripts/mytraceroute.sh",
+    "auto_fault_diagnostic":"bash ./scripts/auto_fault_diagnostic.sh"
   },
   "version": "1.0.38"
 }
