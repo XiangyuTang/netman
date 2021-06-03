@@ -23,9 +23,16 @@ npm i <-g> netman
 Usage: netman [options]
  
 Options:
-  -V, --version            output the version number
-  -s, --NI_stat [NI_name]  Log network traffic for the specified interface
-  -m, --monitor [NI_name]  Real-time Monitoring of network interface(NI)
-                           bandwidth.
-  -h, --help               display help for command
+  -V, --version                          output the version number
+  -s, --NI_stat [NI_name]                Log network traffic for the specified interface
+  -m, --monitor [NI_name]                Real-time Monitoring of network interface(NI) bandwidth.
+  -fw, --firewall [action,paremeter...]  open: Open firewall
+  					 close: Close firewall
+  					 status: Show current firewall status
+  					 allow: Allow specific ports or services (e.g., allow 72/tcp 73/udp 90 http)
+  					 deny: Deny specific ports or services (e.g., deny 72 73 90 http)
+  					 reset: Clear all fire settings
+  -check, --security_check               Check whether there are open dangerous ports
+  -h, --help                             display help for command
+
 ```
