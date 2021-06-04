@@ -16,12 +16,12 @@ var exec = require('child_process').exec;
 
 program
   .version('0.1.0')
-  .option('-s, --NI_stat [NI_name]', 'Log network traffic for the specified interface')
+  .option('-s, --NI_stat [NI_name]', 'Log network traffic for the specified interface.')
   .option('-m, --monitor [NI_name]', 'Real-time Monitoring of network interface(NI) bandwidth.')
   .option('-fw, --firewall [action,paremeter...]', 'open: Open firewall\n\t\t\t\t\t close: Close firewall\n\t\t\t\t\t status: Show current firewall status\n\t\t\t\t\t allow: Allow specific ports or services (e.g., allow 72/tcp 73/udp 90 http)\n\t\t\t\t\t deny: Deny specific ports or services (e.g., deny 72 73 90 http)\n\t\t\t\t\t reset: Clear all fire settings')
-  .option('-check, --security_check', 'Check whether there are open dangerous ports')
-  .option('-mtr, --mytraceroute [action,parameter...]', 'Network diagnostic by probing routers on the route path')
-  .option('-afd, --auto_fault_diagnostic', 'Automatic network fault diagnostic for you reference')
+  .option('-check, --security_check', 'Check whether there are open dangerous ports.')
+  .option('-mtr, --mytraceroute [parameter...]', 'Network diagnostic by probing routers on the route path. [-mtr help] for more information.')
+  .option('-afd, --auto_fault_diagnostic [hostname]', 'Automatic network fault diagnostic for you reference.')
   .parse(process.argv);
 
 const options = program.opts();
@@ -93,6 +93,10 @@ else if (options.mytraceroute){
 }
 else if (options.auto_fault_diagnostic){
 	var cmd=`npm run auto_fault_diagnostic`;
+	for(var i=0;i<options.auto_fault_diagnostic.length;i++){
+		cmd+=" ";
+		cmd+=options.auto_fault_diagnostic[i];
+	}
 	exec(cmd ,function(err,stdout,stderr){
 		if(err) {
 			console.log('error:'+stderr);
