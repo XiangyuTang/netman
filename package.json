@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "netman",
   "version": "1.0.53",
   "description": "NetWork Manager on Linux Ubuntu",
@@ -9,7 +8,6 @@
     "monitor": "bash ./scripts/bmon.sh",
     "stat": "bash ./scripts/vnstat.sh",
     "management": "bash ./scripts/nmtui.sh"
-=======
   "_from": "netman",
   "_id": "netman@1.0.38",
   "_inBundle": false,
@@ -46,7 +44,6 @@
   "bundleDependencies": false,
   "dependencies": {
     "commander": "^7.2.0"
->>>>>>> 0fcef15d4ba5fcbcea24cf862fae20994623230b
   },
   "deprecated": false,
   "description": "NetWork Manager on Linux Ubuntu",
