@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "netman",
   "version": "1.0.53",
   "description": "NetWork Manager on Linux Ubuntu",
@@ -8,21 +9,69 @@
     "monitor": "bash ./scripts/bmon.sh",
     "stat": "bash ./scripts/vnstat.sh",
     "management": "bash ./scripts/nmtui.sh"
+=======
+  "_from": "netman",
+  "_id": "netman@1.0.38",
+  "_inBundle": false,
+  "_integrity": "sha512-2NKZ/Pop+8bSx8TD5HOyVE+Un7y6E/pnlmX/FH04nkmlYECQt0IEJgfkwkqFCD2fdGM32fAG6Hx8ap+x6HfMSQ==",
+  "_location": "/netman",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "netman",
+    "name": "netman",
+    "escapedName": "netman",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/netman/-/netman-1.0.38.tgz",
+  "_shasum": "1b9afcba047183e6845aeebcf0fef614e6d80a7c",
+  "_spec": "netman",
+  "_where": "/home/ryan/桌面/network management",
+  "author": {
+    "name": "txyyy"
+  },
+  "bin": {
+    "netman": "cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/XiangyuTang/cli_demo/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "commander": "^7.2.0"
+>>>>>>> 0fcef15d4ba5fcbcea24cf862fae20994623230b
+  },
+  "deprecated": false,
+  "description": "NetWork Manager on Linux Ubuntu",
+  "homepage": "https://github.com/XiangyuTang/cli_demo#readme",
   "keywords": [
     "netman",
     "network manager",
-    "network management",
+    "network manage",
     "network"
   ],
-  "author": "txyyy",
   "license": "MIT",
-  "bin": "cli.js",
-  "dependencies": {
-    "commander": "^7.2.0"
-  },
+  "main": "index.js",
+  "name": "netman",
   "repository": {
     "type": "git",
-    "url": "https://github.com/XiangyuTang/netman.git"
-  }
+    "url": "git+https://github.com/XiangyuTang/cli_demo.git"
+  },
+  "scripts": {
+    "index": "bash ./scripts/welcome.sh",
+    "monitor": "bash ./scripts/bmon.sh",
+    "stat": "bash ./scripts/vnstat.sh",
+    "firewall":"bash ./scripts/firewall.sh",
+    "security_check":"bash ./scripts/security_check.sh",
+    "mytraceroute":"bash ./scripts/mytraceroute.sh",
+    "auto_fault_diagnostic":"bash ./scripts/auto_fault_diagnostic.sh"
+  },
+  "version": "1.0.38"
 }
