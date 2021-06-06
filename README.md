@@ -9,9 +9,26 @@ Netman is a light weight network manage tool on Ubuntu. It consists of common ne
 
 	1.2 A log of network traffic for the selected interface(s). It uses the network interface statistics provided by the kernel as information source, based on [vnstat](https://humdi.net/vnstat/) tool.
 2. Configuration management
+
+	2.1 Show a network connection editor that supports adding, modifying, viewing and deleting connections, based on [nmtui](nmtui is a curses‐based TUI application for interacting with NetworkManager. When starting nmtui, the user is prompted to choose the activity to perform unless it was specified as the first argument.).
+
+	2.2 Advanced network management deployed on [IPMininet](https://ipmininet.readthedocs.io/en/latest/) which can offer traffic engineering by SRv6.
+	
 3. Safty management
+
+	3.1 Firewall configuration based on [ufw](https://help.ubuntu.com/community/UFW), including open/close firewall, allow/deny specific ports or services, check firewall status, etc.
+
+	3.2 Check whether there are dangerous ports in use automatically, based on [netstat](https://en.wikipedia.org/wiki/Netstat) and [a list of dangerous ports](https://github.com/T0xst/linux/blob/master/checkrules/dangerstcpports.dat).
+
 4. Performance management
+
+	4.1 Network Performance module collects the latency and packet loss data and automatically estimates a application-perceived latency for the user's references.
+
 5. Fault management
+
+	5.1 Automatic network fault diagnostic for you reference. It automatically detects and locates network faults by testing the connectivity between network nodes and inspecting DNS servers, and provides suggested solutions.
+
+	5.2 Network diagnostic by probing routers on the route path and provide corresponding statistical information, based on [mtr](https://help.aliyun.com/knowledge_detail/98706.html) tool. Using these information, the location of network fault can be located more accurately.
 
 # Installation
 
