@@ -1,4 +1,7 @@
+![](https://img-blog.csdnimg.cn/2021060700295267.png)
 # Welcome to the netman!
+
+[![Build Status](https://travis-ci.org/meolu/walden.svg?branch=master)](https://travis-ci.org/meolu/walden)
 
 Netman is a light weight network manage tool on Ubuntu. It consists of common network management tools. You can easily find network problems on your personal host using netman.
 
