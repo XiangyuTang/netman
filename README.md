@@ -6,6 +6,12 @@
 Netman is a light weight network manage tool on Ubuntu. It consists of common network management tools. You can easily find network problems on your personal host using netman.
 
 # What can netman do?
+
+## Framework
+![](https://img-blog.csdnimg.cn/20210607113209700.png)
+
+## Details
+
 1. Accounting management
 
 	1.1 Real-time monitoring of network equipment traffic and rate changes, based on [Bmon](https://zhuanlan.zhihu.com/p/26307811) tool.
